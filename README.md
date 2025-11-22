@@ -5,11 +5,17 @@ A simple Python program that helps you record your daily expenses and automatica
 # 🚀 Features
 
 ✔ Add expenses with amount and description
+
 ✔ Automatic category detection from keywords
+
 ✔ Option to manually change category
+
 ✔ Saves all expenses to expenses.json
+
 ✔ Automatically loads past expenses on startup
+
 ✔ Displays category-wise total and full expense list
+
 
 # 📂 File Storage
 
