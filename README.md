@@ -56,8 +56,11 @@ python main.py
 • Press Enter to accept or type another category:
 
 >  Food
+> 
 >  Travel
+> 
 >  Bills
+> 
 >  Other
 
 Type q instead of amount to quit and view summary
