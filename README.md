@@ -34,11 +34,11 @@ Each expense entry looks like:
 ```
 # ▶ How to Run
 
-Install Python 3
+• Install Python 3
 
-Download the project files
+• Download the project files
 
-Run the program:
+• Run the program:
 ```
 python main.py
 ```
@@ -47,13 +47,13 @@ python main.py
 
 # 🧠 Usage
 
-Enter amount
+• Enter amount
 
-Enter description
+• Enter description
 
-The program will suggest a category automatically
+• The program will suggest a category automatically
 
-Press Enter to accept or type another category:
+• Press Enter to accept or type another category:
 
 >  Food
 >  Travel
