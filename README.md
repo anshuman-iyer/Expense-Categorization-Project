@@ -81,6 +81,3 @@ KEYWORDS = {
     "Travel": ["bus", "metro", "flight", ...],
     "Bills": ["electricity", "rent", ...]
 }```
-    "Travel": ["bus", "metro", "flight", ...],
-    "Bills": ["electricity", "rent", ...]
-}
