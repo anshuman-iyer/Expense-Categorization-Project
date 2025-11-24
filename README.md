@@ -8,8 +8,8 @@ People find it hard to track daily expenses and understand where most of their m
 
 The system has three major functional modules:
 
-**1️⃣ Expense Input & Validation
-**
+**1️⃣ Expense Input & Validation**
+
 User enters amount + description
 
 Amount is validated
