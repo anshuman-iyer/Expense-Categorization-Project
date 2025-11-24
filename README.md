@@ -1,92 +1,72 @@
-# 🧾 Expense Categorizer (with Save & Load)
+# Expense Categorizer – Personal Expense Tracker in Python
 
-A simple Python program that helps you record your daily expenses and automatically categorizes them into Food, Travel, Bills, or Other using smart keyword detection. Your data is saved to a file and loaded back every time you run the program.
+🔹 Problem Statement
 
-# 🚀 Features
+People find it hard to track daily expenses and understand where most of their money is spent. Manual tracking is time-consuming and lacks insights. This project solves the problem by building a lightweight Python program that records expenses, categorizes them automatically, and summarizes spending.
 
-✔ Add expenses with amount and description
+🔹 Functional Requirements
 
-✔ Automatic category detection from keywords
+The system has three major functional modules:
 
-✔ Option to manually change category
+1️⃣ Expense Input & Validation
 
-✔ Saves all expenses to expenses.json
+User enters amount + description
 
-✔ Automatically loads past expenses on startup
+Amount is validated
 
-✔ Displays category-wise total and full expense list
+q exits input mode and shows summary
 
+2️⃣ Automatic Category Detection
 
-# 📂 File Storage
+Auto-suggests category (Food / Travel / Bills / Other) using keywords
 
-All expense records are stored in a local JSON file:
+User can accept suggestion or enter category manually
 
-expenses.json
+3️⃣ Storage & Reporting
 
+Loads previous records from expenses.json
 
-Each expense entry looks like:
-```
-{
-  "amount": 120.5,
-  "description": "Pizza with friends",
-  "category": "Food"
-}
-```
-# ▶ How to Run
+Saves all expenses on exit
 
-• Install Python 3
+Displays category-wise totals + full list
 
-• Download the project files
+🔹 Non-Functional Requirements (minimum 4)
 
-• Run the program:
-```
-python main.py
-```
+Usability – simple CLI, minimal input needed
 
-(replace main.py with the actual filename if different)
+Reliability – data saved persistently in JSON
 
-# 🧠 Usage
+Maintainability – modular code structure, editable keyword dictionary
 
-• Enter amount
+Error Handling – invalid input handled gracefully
 
-• Enter description
+(Optional extras if needed: performance, resource efficiency)
 
-• The program will suggest a category automatically
+🔹 Architecture (short)
+main.py → handles user input
+categorizer.py → category suggestion
+storage.py → load/save JSON
+report.py → summary printing
+utils/validation.py → input checking
 
-• Press Enter to accept or type another category:
+🔹 Storage
 
->  Food
-> 
->  Travel
-> 
->  Bills
-> 
->  Other
+File: expenses.json
+Sample data:
 
-Type q instead of amount to quit and view summary
+{"amount": 120.5, "description": "Pizza with friends", "category": "Food"}
 
-# 📊 Output Summary
+🔹 Features Summary (for README)
 
-At the end of a session, you'll see:
-```
-=== Expense Summary ===
-Food: 450.00
-Travel: 200.00
-Bills: 1200.00
-Other: 150.00
+Add expense (amount + description)
 
-Detailed list:
-Food   |  150.00 | Pizza with friends
-Travel |  200.00 | Bus ticket
-Bills  | 1200.00 | Electricity bill
-...
-```
-# 🔧 Customization
+Auto category detection via keywords
 
-You can change keyword detection inside the dictionary:
-```
-KEYWORDS = {
-    "Food": ["pizza", "burger", "cafe", ...],
-    "Travel": ["bus", "metro", "flight", ...],
-    "Bills": ["electricity", "rent", ...]
-}
+Manual override for category
+
+Saves and loads data automatically
+
+Shows category-wise spending summary
+
+🔹 statement.md (simple)
+The Expense Categorizer is a CLI tool that helps users record daily expenses and analyze spending pa
